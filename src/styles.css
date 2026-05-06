@@ -1,0 +1,99 @@
+/* Color Palette 
+#E8EDF2 - white with blue undertones (foreground)
+#2C3947 - navy blue  (background)
+#547A95 - blue
+#C2A56D - sand beige
+*/
+/* shapedivider.app CSS */
+.custom-shape-divider-top-1778100104 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1778100104 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 250px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1778100104 .shape-fill {
+    fill: #2C3947;
+}
+/**********My CSS Below***************/
+* {
+    box-sizing: border-box;
+}
+header{
+    height: 50px;
+    width: 100%;
+}
+body{
+    background-color: #E8EDF2;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.social-media-icons{
+    display: block;
+}
+/********* ABOUT ME SECTION **************/
+.about-me-container{
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+    
+}
+.about-me-content-area{
+    display: flex;
+}
+.about-me-img{
+    width: 250px;
+    height: auto;
+    max-width: 500px;
+}
+.about-me-text{
+    display: block;
+}
+.about-me-links{
+    display: flex;
+}
+
+/******* PROJECTS SECTION *************/
+.projects-container{
+    display: block;
+}
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+.project{
+    display: flex;
+}
+.project-screenshot{
+    max-width: 250px;
+}
+/******** CONTACT INFO SECTION *************/
+.contact-info-container{
+    display: block;
+}
+.contact-info{
+    display: block;
+}
+.contact-info-links{
+    display: flex;
+}
+.contact-info-img{
+    max-width: 250px;
+}
