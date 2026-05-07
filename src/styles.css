@@ -19,8 +19,8 @@
 .custom-shape-divider-top-1778100104 svg {
     position: relative;
     display: block;
-    width: calc(206% + 1.3px);
-    height: 250px;
+    width: calc(200% + 1.3px);
+    height: 550px;
     transform: rotateY(180deg);
 }
 
@@ -36,8 +36,10 @@ header{
     width: 100%;
 }
 body{
-    background-color: #E8EDF2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5dadf;
+    font-family: "Cascadia Code", Verdana, Geneva, Tahoma, sans-serif
 }
 ul{
     display: flex;
@@ -45,36 +47,37 @@ ul{
 }
 
 .social-media-icons{
-    display: block;
+    padding: 5px;
+    width: 25px;
 }
 /********* ABOUT ME SECTION **************/
 .about-me-container{
     display: block;
     margin: 0 auto;
-    /* border: 5px solid black;
-    background-color: white;
-    border-radius: 5px; */
-    max-width: 50%;
+    max-width: 80%;
+    padding-bottom: 200px;
 }
 .about-me-content-area{
     display: flex;
 }
 .about-me-img{
-    /* width: 250px; */
     display: flex;
-
     height: auto;
-    max-width: 300px;
+    max-width: 400px;
 }
 .about-me-text{
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    max-width: 80%;
     background-color: #E8EDF2;
-    width: 100%;
     padding: 25px;
-    border: 5px solid black;
+    box-shadow: 0px 5px 10px rgba(87, 87, 87, 0.479);
 }
 .about-me-text > p{
     color: rgb(88, 88, 88);
+    font-size: 24px;
 }
 .about-me-links{
     display: flex;
@@ -83,30 +86,78 @@ ul{
 
 /******* PROJECTS SECTION *************/
 .projects-container{
-    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+.projects-container > h1{
+    margin: 0;
+    padding: 0;
 }
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 50%, 50%; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 .project{
     display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #E8EDF2;
+    font-size: 18px;
+    box-shadow: 0px 5px 10px rgba(87, 87, 87, 0.479);
 }
 .project-screenshot{
-    max-width: 250px;
+    max-width: 100%;
+}
+.project-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 25px; padding-right: 25px;
+}
+.project-descr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px; padding-right: 25px;
+    color: rgb(88, 88, 88);
 }
 /******** CONTACT INFO SECTION *************/
 .contact-info-container{
-    display: block;
+    max-width: 100%;
+    background-color: #547A95;
+    color: #E8EDF2;
+    margin: 0 auto;
 }
 .contact-info{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 30%;
+    font-size: 22px;
+}
+.contact-address{
+    display: flex;
+    flex-direction: column;
+}
+.contact-address > p{
+    padding: 0;
+    margin: 0;
+}
+.contact-details{
+    display: flex;
+    gap: 10px;
 }
 .contact-info-links{
     display: flex;
 }
 .contact-info-img{
-    max-width: 250px;
+    max-width: 700px;
+    height: auto;
 }
