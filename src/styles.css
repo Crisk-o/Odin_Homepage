@@ -209,52 +209,6 @@ ul{
     fill: #2C3947;
 }
 /**********Media Queries***************/
-/*for tablets <=1180px*/
-@media only screen and (max-width: 1180px){
-    .social-media-icons{
-        width: 22px;
-        cursor: pointer;
-        gap: 5px;  
-    }
-    .about-me-container{
-        padding-bottom: 125px;
-    }
-    .about-me-text{
-        font-size: 14px;
-    }
-    .about-me-text > p{
-        color: rgb(88, 88, 88);
-        font-size: 14px;
-    }
-    .about-me-img{
-        width: 300px;
-    }
-    .about-me-img-text{
-        right: 25%;
-        color: #E8EDF2;
-    }
-    .about-me-links{
-        width: 100%;
-        justify-content: flex-end;
-    }
-    .projects-container{
-        padding-bottom: 125px;
-    }
-    .project-info{
-        padding-left: 10px; padding-right: 10px;
-        font-size: 16px;
-    }
-    .project-descr{
-        font-size: 14px;
-    }
-    .contact-info{
-        max-width: 100%;
-        font-size: 16px;
-    }
-    .contact-info-img{
-        padding-right: 25px;
-    }
-}
 /* for phones <= 500px*/
 @media only screen and (max-width: 500px){
     .social-media-icons{
@@ -308,5 +262,50 @@ ul{
         max-width: 100vw;
     }
 }
-
+/*for tablets <=1180px*/
+@media only screen and (max-width: 1180.01px){
+    .social-media-icons{
+        width: 22px;
+        cursor: pointer;
+        gap: 5px;  
+    }
+    .about-me-container{
+        padding-bottom: 125px;
+    }
+    .about-me-text{
+        font-size: 14px;
+    }
+    .about-me-text > p{
+        color: rgb(88, 88, 88);
+        font-size: 14px;
+    }
+    .about-me-img{
+        width: 300px;
+    }
+    .about-me-img-text{
+        right: 25%;
+        color: #E8EDF2;
+    }
+    .about-me-links{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .projects-container{
+        padding-bottom: 125px;
+    }
+    .project-info{
+        padding-left: 10px; padding-right: 10px;
+        font-size: 16px;
+    }
+    .project-descr{
+        font-size: 14px;
+    }
+    .contact-info{
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .contact-info-img{
+        padding-right: 25px;
+    }
+}
 
