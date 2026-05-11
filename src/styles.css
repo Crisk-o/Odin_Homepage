@@ -4,30 +4,7 @@
 #547A95 - blue
 #C2A56D - sand beige
 */
-/* shapedivider.app CSS */
-.custom-shape-divider-top-1778100104 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1;
-}
 
-.custom-shape-divider-top-1778100104 svg {
-    position: relative;
-    display: block;
-    width: calc(200% + 1.3px);
-    height: 550px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1778100104 .shape-fill {
-    fill: #2C3947;
-}
-/**********My CSS Below***************/
 * {
     box-sizing: border-box;
 }
@@ -51,24 +28,7 @@ ul{
     width: 35px;
     cursor: pointer;
 }
-/* for phones <= 600px*/
-@media(max-width: 600px){
-    .social-media-icons{
-        width: 15px;
-    }
-}
-/*for tablets <=1000px*/
-@media(max-width: 1000px){
-    .social-media-icons{
-        width: 25px;
-    }
-    .project-info{
-        display: flex;
-        padding: 0;
-        justify-content: center;
-        font-size: 16px;
-    }
-}
+
 /********* ABOUT ME SECTION **************/
 .about-me-container{
     display: block;
@@ -80,12 +40,26 @@ ul{
     display: flex;
     flex: 1 1 auto
 }
-
+.img-container{
+    display: inline-block;
+    position: relative;
+}
 .about-me-img{
-    display: flex;
+    display: block;
     height: auto;
     max-width: 400px;
     min-width: 100px;
+}
+.about-me-img-text{
+    font-size: clamp(1.5rem, 1.5vw, 3rem);
+    position: absolute;
+    text-wrap: nowrap;
+    letter-spacing: 0px;
+    left: 35%;
+    right: 50%;
+    bottom: 5%;
+    color: #E8EDF2;
+    transform: translate(-45%, 45%);
 }
 .about-me-text{
     display: flex;
@@ -99,7 +73,7 @@ ul{
 }
 .about-me-text > p{
     color: rgb(88, 88, 88);
-    font-size: 24px;
+    font-size: 22px;
 }
 .about-me-links{
     display: flex;
@@ -207,4 +181,110 @@ ul{
     max-width: 600px;
     min-width: 100px;
     height: auto;
+}
+
+/*********************************/
+/* shapedivider.app CSS */
+.custom-shape-divider-top-1778100104 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1778100104 svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 550px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1778100104 .shape-fill {
+    fill: #2C3947;
+}
+/**********Media Queries***************/
+/* for phones <= 600px*/
+@media(max-width: 480px){
+    .social-media-icons{
+        width: 15px;
+    }
+    .about-me-content-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+}
+@media(max-width: 600px){
+    .social-media-icons{
+        width: 15px;
+    }
+    .about-me-content-area{
+        max-width: 100%;
+    }
+    .about-me-img{
+        width: 100%;
+    }
+    .about-me-img-text{
+        top: 1px;
+        color: black;
+    }
+    .about-me-img-text{
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        color: #E8EDF2;
+    }
+}
+@media only screen and (max-width: 820px){
+    .social-media-icons{
+        width: 15px;
+    }
+    .about-me-content-area{
+        max-width: 100%;
+        font-size: 10px;
+    }
+    .about-me-text > p{
+        font-size: 10px;
+    }
+    .about-me-img{
+        width: 250px;
+    }
+
+}
+/*for tablets <=1180px (iPad 10th/11th gen)*/
+@media only screen and (max-width: 1180px){
+    .social-media-icons{
+        width: 15px;
+    }
+    .about-me-text{
+        font-size: 14px;
+    }
+    .about-me-text > p{
+        color: rgb(88, 88, 88);
+        font-size: 14px;
+    }
+    .about-me-img-text{
+        right: 25%;
+        color: #E8EDF2;
+    }
+    .project-info{
+        padding-left: 15px; padding-right: 15px;
+        font-size: 16px;
+    }
+    .project-descr{
+        font-size: 14px;
+    }
+    .contact-info{
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .contact-info-img{
+        padding-right: 25px;
+    }
 }
